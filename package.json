@@ -1,0 +1,16 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "采用 Electron 封装尝试开发客户端应用程序",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Allen Li",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^12.0.1"
+  }
+}
