@@ -1,0 +1,47 @@
+@import (reference) './bootbox/less/material-colors';
+@import (reference) './bootbox/less/resets';
+@import (reference) './mixin';
+
+@body-bg: 			@md-grey-100;
+
+@brand-primary:   @md-blue-500;
+
+@font-size-base: 	14px;
+@base-font-size:    14;
+@line-height-base: 20/14;
+
+@light-text-color:	#B5BEC9;
+@text-color: 		@md-grey-900;
+
+* {
+  .box-sizing(border-box);
+ 
+}
+*:before,
+*:after {
+  .box-sizing(border-box);
+}
+
+html,body{
+	.size(100%);
+	margin:0;
+	padding:0;
+	font-size: @font-size-base;
+	color: @text-color;
+
+  &.show-modal{
+    overflow: hidden;
+  }
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
+	background-color: #fff !important;
+}
+body{
+	background: @body-bg;
+}
+[name='btSelectItem']:disabled{
+		background: #eee;
+}
+a{
+	text-decoration: none;
+}
