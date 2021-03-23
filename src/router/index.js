@@ -1,5 +1,6 @@
 import VueRouter from "vue-router"
 import Desktop from '../views/layout/Desktop.vue'
+import Bookmarks from '../views/bookmarks/List.vue'
 
 // 解决导航栏中的vue-router在3.0版本以上重复点菜单报错问题
 const originalPush = VueRouter.prototype.push
@@ -15,7 +16,10 @@ const router = {
       path: '/',
       component: Desktop
     },
-
+    {
+      path: '/bookmarks',
+      component: Bookmarks
+    },
   ],
   scrollBehavior() {
     return new Promise((resolve) => {

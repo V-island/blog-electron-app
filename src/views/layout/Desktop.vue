@@ -1,6 +1,6 @@
 <template>
   <div>
-    qweqwe
+    <router-link :to="{ path:'/bookmarks' }">书签</router-link>
   </div>
 </template>
 
