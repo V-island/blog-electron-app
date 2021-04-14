@@ -5266,7 +5266,7 @@ function decodeUtf8Char (str) {
 },{"base64-js":50,"ieee754":51,"is-array":52}],50:[function(require,module,exports){
 var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 
-;(function (exports) {
+(function (exports) {
 	'use strict';
 
   var Arr = (typeof Uint8Array !== 'undefined')
@@ -15043,7 +15043,7 @@ var _classCallCheck = function (instance, Constructor) { if (!(instance instance
 
 var Container = _interopRequire(require("./container"));
 
-// CSS at-rule like “this.keyframes name { }”.
+// CSS at-rule like ï¿½this.keyframes name { }ï¿½.
 //
 // Can contain declarations (like this.font-face or this.page) ot another rules.
 
@@ -15819,7 +15819,7 @@ var vendor = _interopRequire(require("./vendor"));
 
 var Node = _interopRequire(require("./node"));
 
-// CSS declaration like “color: black” in rules
+// CSS declaration like ï¿½color: blackï¿½ in rules
 
 var Declaration = (function (Node) {
     function Declaration(defaults) {
@@ -17791,7 +17791,7 @@ var Container = _interopRequire(require("./container"));
 
 var list = _interopRequire(require("./list"));
 
-// CSS rule like “a { }”
+// CSS rule like ï¿½a { }ï¿½
 
 var Rule = (function (Container) {
     function Rule(defaults) {
@@ -19176,7 +19176,7 @@ define(function (require, exports, module) {
         for (var j = 0; j < this._sections[i].consumer.sources.length; j++) {
           sources.push(this._sections[i].consumer.sources[j]);
         }
-      };
+      }
       return sources;
     }
   });
@@ -19346,8 +19346,8 @@ define(function (require, exports, module) {
           if (typeof adjustedMapping.originalLine === 'number') {
             this.__originalMappings.push(adjustedMapping);
           }
-        };
-      };
+        }
+      }
 
     this.__generatedMappings.sort(util.compareByGeneratedPositions);
     this.__originalMappings.sort(util.compareByOriginalPositions);
@@ -20761,7 +20761,7 @@ define(function (require, exports, module) {
     }
 
     return mappingA.generatedColumn - mappingB.generatedColumn;
-  };
+  }
   exports.compareByOriginalPositions = compareByOriginalPositions;
 
   /**
@@ -20802,7 +20802,7 @@ define(function (require, exports, module) {
     }
 
     return strcmp(mappingA.name, mappingB.name);
-  };
+  }
   exports.compareByGeneratedPositions = compareByGeneratedPositions;
 
 });

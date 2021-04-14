@@ -1,15 +1,35 @@
 <template>
   <div>
-    Bookmarks
+    <input
+      type="file"
+      id="files"
+      ref="referenceUpload"
+      name="file"
+      accept=".html, .json"
+      @change="uploadPic"
+    />
   </div>
 </template>
 
 <script>
-  export default {
-    
-  }
+export default {
+  methods: {
+    uploadPic() {
+      var selectedFile = document.getElementById("files").files[0]; //获取读取的File对象
+      var name = selectedFile.name; //读取选中文件的文件名
+      var size = selectedFile.size; //读取选中文件的大小
+      console.log("文件名:" + name + "大小：" + size);
+
+      var reader = new FileReader(); //这里是核心！！！读取操作就是由它完成的。
+      reader.readAsText(selectedFile); //读取文件的内容
+
+      reader.onload = function () {
+        console.log(this.result); //当读取完成之后会回调这个函数，然后此时文件的内容存储到了result中。直接操作即可。
+      };
+    },
+  },
+};
 </script>
 
 <style lang="less" scoped>
-
 </style>
