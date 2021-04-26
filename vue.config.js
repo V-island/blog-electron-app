@@ -8,7 +8,7 @@ function resolve(dir) {
 
 module.exports = {
   //基本路径
-  publicPath: IS_PROD ? './' : './',
+  publicPath: IS_PROD ? '/' : './',
   //构建时的输出目录
   outputDir: process.env.outputDir,
   //放置静态资源的目录
@@ -80,7 +80,7 @@ module.exports = {
     'style-resources-loader': {
       preProcessor: 'less',
       patterns: [
-        path.resolve(__dirname, './src/assets/less/variables.less')  // 引入全局样式变量
+        path.resolve(__dirname, './src/common/less/variables.less')  // 引入全局样式变量
       ] 
     }
   },

@@ -2,12 +2,12 @@
 import VueRouter from "vue-router";
 
 // 设置其他框架/组件
-// import installAntDesignVue from "./install/AntDesignVue.js";
-// import installAmapVue from "./install/AmapVue.js";
-// import installScrollVue from "./install/ScrollVue.js";
-// import installSignaturePad from "./install/SignaturePadVue.js";
-// import installVideoJsVue from "./install/VideoJsVue.js";
-// import installHilderJsVue from "./install/HolderJsVue";
+import installAntDesignVue from "./install/AntDesignVue";
+// import installAmapVue from "./install/AmapVue";
+// import installScrollVue from "./install/ScrollVue";
+// import installSignaturePad from "./install/SignaturePadVue";
+// import installVideoJsVue from "./install/VideoJsVue";
+// import installHolderJsVue from "./install/HolderJsVue";
 
 // 引入第三方样式
 // import 'font-awesome/css/font-awesome.css';
@@ -29,7 +29,7 @@ Common.install = function (Vue) {
   Vue.use(VueRouter);
 
   // 注册ant-design-vue
-  // Vue.use(installAntDesignVue);
+  Vue.use(installAntDesignVue);
   
   // 注册AMap-Vue
   // Vue.use(installAmapVue);
@@ -41,7 +41,7 @@ Common.install = function (Vue) {
   // Vue.use(installVideoJsVue);
 
   // 注册Holder-Js-Vue
-  // Vue.use(installHilderJsVue);
+  // Vue.use(installHolderJsVue);
 
   // 注册Scroll-Vue
   // Vue.use(installScrollVue);

@@ -46,6 +46,48 @@
   text-overflow: ellipsis;
 }
 
+//Shortcuts
+
+.border-radius(@radius:5px) {
+  -webkit-border-radius: @arguments;
+-moz-border-radius: @arguments;
+border-radius: @arguments;
+// 背景不超出圆角
+-moz-background-clip: padding; 
+-webkit-background-clip: padding-box; 
+background-clip: padding-box;
+}
+
+.box-sizing(@type: border-box) {
+-moz-box-sizing: @type;
+-webkit-box-sizing: @type;
+-ms-box-sizing: @type;
+box-sizing: @type;
+}
+
+.box-shadow(@shadow: 1px 1px 2px rgba(0,0,0,0.25)) {
+-webkit-box-shadow: @shadow;
+-moz-box-shadow: @shadow;
+box-shadow: @shadow;
+}
+.box-shadow(@shadow_inset,@shadow_outset) {
+-webkit-box-shadow: @shadow_inset,@shadow_outset;
+-moz-box-shadow: @shadow_inset,@shadow_outset;
+box-shadow: @shadow_inset,@shadow_outset;
+}
+.box-shadow(@shadow_one,@shadow_two,@shadow_three) {
+-webkit-box-shadow: @shadow_one,@shadow_two,@shadow_three;
+-moz-box-shadow: @shadow_one,@shadow_two,@shadow_three;
+box-shadow: @shadow_one,@shadow_two,@shadow_three;
+}
+.filter(@filter: grayscale(100%)) {
+-webkit-filter: @filter;
+-moz-filter: @filter;
+-ms-filter: @filter;
+-o-filter: @filter;
+filter: @filter;
+}
+
 // display flexbox
 .flexbox() {
   // 2009 spec
