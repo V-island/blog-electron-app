@@ -1,14 +1,7 @@
 <template>
-  <div id="components-layout-demo-basic">
-    <app-layout>
-      <app-layout-sider>Sider</app-layout-sider>
-      <app-layout>
-        <app-layout-header>Header</app-layout-header>
-        <app-layout-content>Content</app-layout-content>
-        <app-layout-footer>Footer</app-layout-footer>
-      </app-layout>
-    </app-layout>
-  </div>
+  <section>
+    123
+  </section>
 </template>
 
 <script>

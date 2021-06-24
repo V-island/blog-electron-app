@@ -20,7 +20,7 @@ module.exports = {
   //用于多页配置，默认是 undefined
   pages: undefined,
   //是否在保存的时候使用 `eslint-loader` 进行检查。
-  lintOnSave: false,
+  lintOnSave: true,
   //是否为生产环境构建生成 source map？
   productionSourceMap: !IS_PROD, // 生产环境的 source map
   //设置生成的 HTML 中 <link rel="stylesheet"> 和 <script> 标签的 crossorigin 属性。
@@ -52,9 +52,9 @@ module.exports = {
   },
   chainWebpack: config => {
     config.resolve.alias
-      .set("@", resolve("./src"))
-      .set("@assets", resolve("./src/assets"))
-      .set("@utils", resolve("./src/common/utils"));
+      .set("@", resolve("src"))
+      .set("assets", resolve("src/assets"))
+      .set("utils", resolve("src/common/utils"));
 
     if (IS_PROD) {
       // 删除预加载

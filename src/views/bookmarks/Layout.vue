@@ -4,7 +4,9 @@
   <app-layout>
     <marks-sort class="sider"></marks-sort>
     <app-layout>
-      <app-layout-content class="content">Content</app-layout-content>
+      <app-layout-content class="content">
+        <marks-list></marks-list>
+      </app-layout-content>
     </app-layout>
   </app-layout>
 </app-layout>
@@ -13,11 +15,13 @@
 <script>
 import ToolMenu from './ToolMenu.vue';
 import MarksSort from './MarksSort.vue';
+import MarksList from './MarksList.vue';
 
 export default {
   components: {
     ToolMenu,
-    MarksSort
+    MarksSort,
+    MarksList
   }
 };
 </script>

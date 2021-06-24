@@ -46,6 +46,23 @@
   text-overflow: ellipsis;
 }
 
+// 只显示X行超出隐藏
+.text-line-clamp(@column) {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @column;
+  line-clamp: @column;
+  -webkit-box-orient: vertical;
+}
+.background-imager() {
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center;
+  background-size: contain;
+}
+
 //Shortcuts
 
 .border-radius(@radius:5px) {
@@ -119,6 +136,9 @@ filter: @filter;
   -ms-flex: @flex;
   -o-flex: @flex;
   flex: @flex;
+}
+.flex-grow(@flex) {
+  flex-grow: @flex;
 }
 
 // flex-derection = box-orient + box-direction
